@@ -406,12 +406,18 @@ textarea {
   -webkit-appearance: none;
 }
 
-h1 {
-  color: #434343;
-  font-family: serif;
+.main-header .main-logo {
+  width: 40px;
+  height: 40px;
 }
 
-.profileimg_container {
+h1 {
+  color: #9b9ba4;
+  font-family: serif;
+  width: 600px;
+}
+
+.profileimg-container {
   margin: 0 200px;
 }
 
