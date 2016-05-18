@@ -3,9 +3,11 @@ var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
 var plumber = require('gulp-plumber');
 var notifier = require('node-notifier');
+var watch = require('gulp-watch');
 
 gulp.task('sass', function () {
-	return gulp.src('sass/*.scss')
+	return gulp.src('sass/**/*.scss')
+	.pipe(watch('sass/**/*.scss'))
 	.pipe(plumber({
 		errorHandler: function(error) {
 			// ここでエラーをキャッチできる
@@ -22,13 +24,13 @@ gulp.task('sass', function () {
 	}))
 	.pipe(sourcemaps.init())
 	.pipe(sass({outputStyle: 'expanded'}))
-	.pipe(sourcemaps.write())
+	.pipe(sourcemaps.write('.'))
 	.pipe(plumber.stop())
 	.pipe(gulp.dest('css'));
 });
 
 gulp.task('sass:watch', function () {
-	gulp.watch('sass/*.scss', ['sass']);
+	gulp.watch('sass/**/*.scss', ['sass']);
 });
 
 // デフォルトで起動するタスク
