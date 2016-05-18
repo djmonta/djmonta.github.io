@@ -11,6 +11,6 @@ $(function() {
 	.addIndicators()
 	.addTo(controller);
 	*/
-
-	
+	height = $(window).height() - 60;
+	TweenMax.to(".hero-container", 1, {height:height});
 });

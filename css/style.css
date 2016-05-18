@@ -445,9 +445,9 @@ textarea {
 
 .content .hero-container {
   position: relative;
-  height: 100vh;
+  height: 200vh;
   width: calc(100% - 100px);
-  margin-left: 40px;
+  margin-left: 50px;
   margin-top: 60px;
 }
 
