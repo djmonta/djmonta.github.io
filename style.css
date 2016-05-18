@@ -1,0 +1,16 @@
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+#container {
+	margin: 55vh 0;
+	padding: 50px;
+	outline: 1px dashed orange;
+}
+
+#block {
+	padding: 10px;
+	border: 1px solid black;
+	font-family: Helvetica;
+}
