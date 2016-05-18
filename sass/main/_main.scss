@@ -1,16 +1,29 @@
 // main: ../style.scss
-h1 {
-	color: #9b9ba4;
-	font-family: serif;
-	width: 600px;
-}
+.content {
 
-.profileimg-container {
-	margin: 0 200px;
-}
+	padding-left: 80px;
 
-.profileimg {
-	max-width: 100%;
-	height: auto;
-	margin: 0 auto;
+	.hero-container {
+		position: relative;
+		height: 100vh;
+		width: calc(100% - 100px);
+		margin-left: 40px;
+		margin-top: 60px;
+
+		h1 {
+			color: #9b9ba4;
+			font-family: 'Signika', sans-serif;
+			width: 600px;
+		}
+
+		.profileimg {
+			max-width: calc(100% - 100px);
+	    max-height: 100%;
+			margin: 0 auto;
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
 }
